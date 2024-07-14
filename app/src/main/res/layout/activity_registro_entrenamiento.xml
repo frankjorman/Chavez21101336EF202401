@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroEntrenamiento">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:text="Registro de Enfrentamientos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="41dp"
+        android:text="Cuotas"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="15dp"
+        android:text="Local"
+        app:layout_constraintBottom_toTopOf="@+id/txtLocal"
+        app:layout_constraintStart_toStartOf="@+id/txtLocal" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:text="Empate(X)"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmpate"
+        app:layout_constraintStart_toStartOf="@+id/txtEmpate" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="272dp"
+        android:layout_marginBottom="272dp"
+        android:text="Visita(V)"
+        app:layout_constraintBottom_toTopOf="@+id/btnListaEnfrentamientos"
+        app:layout_constraintStart_toStartOf="@+id/txtVisita"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/txtLocal"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="215dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/btnListaEnfrentamientos"
+        app:layout_constraintEnd_toStartOf="@+id/txtEmpate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnEquipoLocal" />
+
+    <Button
+        android:id="@+id/btnRegistrarEnfrentamiento"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="228dp"
+        android:text="Registrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegistrarEquipos"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="115dp"
+        android:text="Registrar Equipos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnRegistrarEnfrentamiento" />
+
+    <Button
+        android:id="@+id/btnListaEnfrentamientos"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="62dp"
+        android:text="Lista de Enfrentamientos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button2" />
+
+    <Spinner
+        android:id="@+id/spnEquipoLocal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnEquipoVisitante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnEquipoLocal" />
+
+    <EditText
+        android:id="@+id/txtEmpate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="65dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/txtVisita"
+        app:layout_constraintEnd_toStartOf="@+id/txtVisita"
+        app:layout_constraintStart_toEndOf="@+id/txtLocal"
+        app:layout_constraintTop_toTopOf="@+id/txtVisita" />
+
+    <EditText
+        android:id="@+id/txtVisita"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrarEnfrentamiento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtEmpate"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
